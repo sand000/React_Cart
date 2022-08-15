@@ -11,6 +11,7 @@ import Household from "../Components/Household";
 import JobOpp from "../Components/JobOpp";
 import LoginPage from "../Components/LoginPage";
 import MensPage from "../Components/MensPage";
+import SingleItemPage from "../Components/SingleItemPage";
 import WomensPage from "../Components/WomensPage";
 
 export default function AllRoutes(){
@@ -24,6 +25,7 @@ export default function AllRoutes(){
                 <Route path="/girlspage" element={<GirlsPage />}></Route>
                 <Route path="/household" element={<Household />}></Route>
                 <Route path="/menspage" element={<MensPage />}></Route>
+                <Route path="/singleitem/:id" element={<SingleItemPage />}></Route>
                 <Route path="/womenspage" element={<WomensPage />}></Route>
 
                 <Route path="/aboutus" element={<AboutUs/>}></Route>
