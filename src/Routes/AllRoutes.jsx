@@ -13,6 +13,7 @@ import LoginPage from "../Components/LoginPage";
 import MensPage from "../Components/MensPage";
 import SingleItemPage from "../Components/SingleItemPage";
 import WomensPage from "../Components/WomensPage";
+import PrivateRoute from "./PrivateRoute";
 
 export default function AllRoutes(){
     return(
@@ -32,7 +33,12 @@ export default function AllRoutes(){
                 <Route path="/contactus" element={<ContactUs />}></Route>
                 <Route path="/faq" element={<Faq />}></Route>
                 <Route path="/jobopp" element={<JobOpp />}></Route>
-                <Route path="/cart" element={<Cart/>}></Route>
+                <Route path="/shoppingcart" element={
+                    // <PrivateRoute>
+                      <Cart/>
+                    //  </PrivateRoute>
+                }></Route>
+                {/* <Route path="/cartItem" element={<Cart/>}></Route> */}
             </Routes>
         </div>
     )

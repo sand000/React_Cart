@@ -3,10 +3,9 @@ import  "../App.css"
 import {FaShoppingCart } from "react-icons/fa";
 export default function Navbar(){
     return(
+        <div style={{padding:"1rem"}}>
 
-        <div>
         <div style={{
-            // backgroundColor:"#123964", 
                   display:"flex", 
                   justifyContent:"space-evenly",
                   height:"3rem",
@@ -20,11 +19,13 @@ export default function Navbar(){
             <Link to="/household">Household</Link>
             <Link to="/menspage">Mens</Link>
             <Link to="/womenspage">Womens</Link>
-            <Link to="/cart"> <h3><FaShoppingCart/></h3> </Link>
+            <Link to="/shoppingcart"> <h3><FaShoppingCart/></h3> </Link>
             </div>
+
            <div style={{height:"250px"}}>
                <img style={{height:"200px",width:"80%", marginTop:"2rem"}} src={process.env.PUBLIC_URL+"/Banner.webp"}></img>
             </div>
+            
         </div>
     )
 }
